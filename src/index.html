@@ -1,13 +1,335 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TailwindDemo</title>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../dist/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../dist/output.css">
 </head>
+
 <body>
-    <h1 class="text-9xl ">hiiii</h1>
+  <header class="bg-white py-8">
+        <div class="container mx-auto">
+            <div class="flex justify-between">
+                <div>
+                    <a href="#" title="Haus Gitschberg" class="inline-block"><img src="assests/images/Logo.png"
+                            alt="Haus Gitschberg" width="250" height="72"></a>
+                </div>
+
+                <div class="flex items-center">
+                    <ul class="list-none flex">
+                        <li class="mr-14  py-3"><a href="#" class="no-underline text-xxs text-jadeBlue"
+                                title="HOME">HOME</a>
+                        </li>
+                        <li class="mr-14 relative group py-3"><a href="#" title="BLOG"
+                                class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue before:inline-block before:absolute before:right-0 before:bottom-1 before:content-[url('assests/images/down-arrow.png')] hover:before:content-[url('assests/images/hover-down-arrow.png')] pr-4">BLOG</a>
+                            <ul
+                                class="absolute z-10 w-64 hidden group-hover:block bg-white border border-solid border-thistleGreen p-6 top-full">
+                                <li class="list-none border border-solid border-b-thistleGreen border-transparent pb-4">
+                                    <a href="#"
+                                        class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                        title="1st Full Post + list">1st Full Post + list</a></li>
+                                <li class="list-none border border-solid border-b-thistleGreen border-transparent py-4">
+                                    <a href="#"
+                                        class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                        title="2 cols Grid Layout">2 cols Grid Layout</a></li>
+                                <li class="list-none border border-solid border-b-thistleGreen border-transparent py-4">
+                                    <a href="#"
+                                        class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                        title="List Layout">List Layout</a></li>
+                                <li class="list-none border border-solid border-b-thistleGreen border-transparent py-4">
+                                    <a href="#"
+                                        class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                        title="1st Full Post + 2 cols Grid">1st Full Post + 2 cols Grid</a></li>
+                                <li class="list-none border border-solid border-b-thistleGreen border-transparent py-4">
+                                    <a href="#"
+                                        class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                        title="3 cols Grid Layout">3 cols Grid Layout</a></li>
+                                <li class="list-none pt-4"><a href="#"
+                                        class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                        title="Standard Blog Layout">Standard Blog Layout</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="mr-14 py-3 relative group"><a href="#" title="FEATURES"
+                                class="no-underline text-xxs text-black leading-5 relative hover:text-jadeBlue before:inline-block before:absolute before:right-0 before:bottom-1 before:content-[url('assests/images/down-arrow.png')] hover:before:content-[url('assests/images/hover-down-arrow.png')] pr-4">FEATURES</a>
+                            <ul
+                                class="absolute z-10 w-64 hidden group-hover:block bg-white border border-solid border-thistleGreen p-6 top-full">
+                                <li
+                                    class="list-none border border-solid border-b-thistleGreen border-transparent pb-4 relative group">
+                                    <a href="#"
+                                        class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                        title="Headers">Headers</a>
+                                    <ul
+                                        class="absolute w-64 hidden group-hover:block bg-white border border-solid border-thistleGreen p-6 left-100">
+                                        <li
+                                            class="list-none border border-solid border-b-thistleGreen border-transparent pb-4">
+                                            <a href="#"
+                                                class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                                title="Headers">Headers 1</a></li>
+                                        <li class="list-none pt-4"><a href="#"
+                                                class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                                title="Sidebars">Headers 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-none border border-solid border-b-thistleGreen border-transparent pb-4 relative group">
+                                    <a href="#"
+                                        class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                        title="Sliders">Sliders</a>
+                                    <ul
+                                        class="absolute z-10 w-64 hidden group-hover:block bg-white border border-solid border-thistleGreen p-6 left-100">
+                                        <li
+                                            class="list-none border border-solid border-b-thistleGreen border-transparent pb-4">
+                                            <a href="#"
+                                                class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                                title="Headers">Slider 1</a></li>
+                                        <li class="list-none pt-4"><a href="#"
+                                                class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                                title="Sidebars">Slider 2</a></li>
+                                    </ul>    
+                                </li>
+                                <li class="list-none pt-4 relative group"><a href="#"
+                                        class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                        title="Sidebars">Sidebars</a>
+                                    <ul
+                                        class="absolute z-10 w-64 hidden group-hover:block bg-white border border-solid border-thistleGreen p-6 left-100">
+                                        <li
+                                            class="list-none border border-solid border-b-thistleGreen border-transparent pb-4">
+                                            <a href="#"
+                                                class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                                title="Headers">Sidebar 1</a></li>
+                                        <li class="list-none pt-4"><a href="#"
+                                                class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                                title="Sidebars">Sidebar 2</a></li>
+                                    </ul> 
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mr-14 relative group py-3"><a href="#" title="CATEGORIES"
+                            class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue before:inline-block before:absolute before:right-0 before:bottom-1 before:content-[url('assests/images/down-arrow.png')] hover:before:content-[url('assests/images/hover-down-arrow.png')] pr-4">CATEGORIES</a>
+                            <ul
+                            class="absolute z-10 w-64 hidden group-hover:block bg-white border border-solid border-thistleGreen p-6 top-full">
+                            <li class="list-none border border-solid border-b-thistleGreen border-transparent pb-4">
+                                <a href="#"
+                                    class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                    title="Lifestyle">Lifestyle</a></li>
+                                    <li class="list-none border border-solid border-b-thistleGreen border-transparent py-4">
+                                        <a href="#"
+                                            class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                            title="Travel">Travel</a></li>
+                                            <li class="list-none pt-4">
+                                                <a href="#"
+                                                    class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                                    title="Photo">Photost</a></li>
+                            </ul>
+                            </li>
+                        <li class="mr-14 py-3"><a href="#" title="ABOUT"
+                                class="no-underline text-xxs text-black hover:text-jadeBlue">ABOUT</a>
+                        </li>
+                        <li class="mr-14 py-3"><a href="#" title="CONTACT"
+                                class="no-underline text-xxs text-black hover:text-jadeBlue">CONTACT</a></li>
+                        <li class="mr-14 relative group py-3"><a href="#" title="SHOP"
+                                       class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue before:inline-block before:absolute before:right-0 before:bottom-1 before:content-[url('assests/images/down-arrow.png')] hover:before:content-[url('assests/images/hover-down-arrow.png')] pr-4">SHOP</a>
+            <ul
+                            class="absolute z-10 w-64 hidden group-hover:block bg-white border border-solid border-thistleGreen p-6 top-full">
+                            <li class="list-none border border-solid border-b-thistleGreen border-transparent pb-4">
+                                <a href="#"
+                                    class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                    title="Cart">Cart</a></li>
+                                    <li class="list-none border border-solid border-b-thistleGreen border-transparent py-4">
+                                        <a href="#"
+                                            class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                            title="Checkout">Checkout</a></li>
+                                            <li class="list-none pt-4">
+                                                <a href="#"
+                                                    class="no-underline text-xxs leading-5 text-black relative hover:text-jadeBlue"
+                                                    title="My Account">My Account</a></li>
+                            </ul>
+                                    </li>
+                        <li class="mr-0 py-3"><a href="#" title="PORTFOLIO"
+                                class="no-underline text-xxs text-black hover:text-jadeBlue">PORTFOLIO</a></li>
+                    </ul>
+                    <div class="py-4 ml-14">
+                        <div class="relative">
+                            <input type="checkbox" class="absolute h-0 w-0" />
+                            <div class="relative block bg-black w-10 h-5 rounded-full">
+                                <div class="absolute left-0.5 top-0.5 ">
+                                    <img src="assests/images/sun.svg" width="15" height="15" alt="sun">
+                                </div>
+                                <div class="absolute right-0.5 top-0.5 bg-white w-4 h-4 rounded-full transition"></div>
+                                <div class="absolute right-0.5 top-0.5 ">
+                                    <img src="assests/images/moon.svg" width="15" height="15" alt="moon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header> 
+<section class="bg-lightYellow">
+<div class="container mx-auto px-4">
+<div class="md:flex md:flex-nowrap items-center">
+  <div class="md:w-1/4 md:pr-16">
+    <span class="relative inline-block">
+        <img src="assests/images/image-tape.png" alt="Tape Image" class="absolute -top-3 -left-3 xl:-top-8 xl:-left-8 h-8 w-8 xl:w-20 xl:h-20">
+        <img class="mx-auto block" src="assests/images/condimentum.png" width="338" height="405" alt="condimentum">
+        <img src="assests/images/image-tape.png" alt="Tape Image" class="absolute -bottom-3 -right-3 xl:-bottom-8 xl:-right-8 h-8 w-8 xl:w-20 xl:h-20">
+    </span>
+    
+  </div>
+  <div class="md:w-3/4 lg:pl-16 md:border-l md:border-solid md:border-l-thistleGreen md:border-transparent py-20">
+      <h2 class="text-6xl text-darkGray font-normal leading-[3.3125rem] tracking-widest relative before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-[10%] before:h-[5px] before:inline-block before:bg-jadeBlue pb-8 mb-8 mt-0">Condimentum Magna Vel Sodales Mollis Nisl Nibh Ornare Eros</h2>
+      <p class="text-xl text-gray font-normal leading-[3rem] pb-10">Nunc condimentum, magna vel sodales mollis, nisl nibh ornare eros, vel malesuada nunc metus. Aenean vitae arcu auctor, imperdiet nisl quis interdum lacus.</p>
+      <div>
+          <a href="#" class="border border-solid border-thistleGreen no-underline italic text-md text-darkGray font-medium py-2 px-5 inline-block hover:bg-thistleGreen hover:text-white" title="Get Started ">GET STARTED</a>
+      </div>
+  </div>
+
+</div>
+</div>
+</section>
+
+<section class="bg-lightGreen ">
+    <div class="container mx-auto px-4">
+    <div class="md:flex md:flex-nowrap items-center">
+        <div class="md:w-1/2 lg:pr-16 py-20">
+            <h2 class="text-8xl text-darkGray font-normal leading-[3.3125rem] tracking-widest relative before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-[10%] before:h-[5px] before:inline-block before:bg-jadeBlue pb-8 mb-8 mt-0">Tools For Creatives</h2>
+            <p class="text-base text-gray font-normal leading-[2.5rem] pb-8 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <div>
+                <a href="#" class="border border-solid border-thistleGreen no-underline italic text-md text-darkGray font-medium py-2 px-5 inline-block hover:bg-thistleGreen hover:text-white" title="GO TO THE BLOG">GO TO THE BLOG</a>
+            </div>
+        </div>
+      <div class="md:w-1/2 md:pl-24 py-14 md:border-l md:border-solid md:border-l-thistleGreen md:border-transparent">
+        <div class="relative flex -mx-4">
+            <img src="assests/images/image-tape.png" alt="Tape Image" class="absolute -top-3 -left-3 xl:-top-8 xl:-left-8 h-8 w-8 xl:w-20 xl:h-20">
+            <img class="mx-auto px-4" src="assests/images/plant.png" width="338" height="505" alt="Plant">
+            <img class="mx-auto  px-4" src="assests/images/decore.png" width="338" height="505" alt="Decore">
+            
+            <img src="assests/images/image-tape.png" alt="Tape Image" class="absolute -bottom-3 -right-3 xl:-bottom-8 xl:-right-8 h-8 w-8 xl:w-20 xl:h-20">
+        </div>
+        
+      </div>
+     
+    
+    </div>
+    </div>
+    </section>
+
+    <section class="lg:py-16 py-8">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+              <div class="border border-solid border-[#D0D0A7] p-8 pb-20">
+                <p class="italic lg:text-xl lg:leading-10 text-center md:text-lg md:leading-8 text-sm leading-6">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor interdum ipsum, non finibus libero. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+              </div>
+              <div class="text-center relative -mt-14">
+                <img src="assests/images/client-1.png" width="100" height="100" alt="client" class="mx-auto border border-solid border-[#D0D0A7] rounded-full p-2 bg-white"/>
+                <h5 class="lg:text-lg md:text-base text-sm lg:leading-10 md:leading-8 leading-5">CLIENT NAME HERE</h5>
+              </div>
+            </div>
+            <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+              <div class="border border-solid border-[#D0D0A7] p-8 pb-20">
+                <p class="italic lg:text-xl lg:leading-10 text-center md:text-lg md:leading-8 text-sm leading-6">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor interdum ipsum, non finibus libero. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+              </div>
+              <div class="text-center relative -mt-14">
+                <img src="assests/images/client-2.png" width="100" height="100" alt="client" class="mx-auto border border-solid border-[#D0D0A7] rounded-full p-2 bg-white"/>
+                <h5 class="lg:text-lg md:text-base text-sm lg:leading-10 md:leading-8 leading-5">CLIENT NAME HERE</h5>
+              </div>
+            </div>
+            <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+              <div class="border border-solid border-[#D0D0A7] p-8 pb-20">
+                <p class="italic lg:text-xl lg:leading-10 text-center md:text-lg md:leading-8 text-sm leading-6">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor interdum ipsum, non finibus libero. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+              </div>
+              <div class="text-center relative -mt-14">
+                <img src="assests/images/client-3.png" width="100" height="100" alt="client" class="mx-auto border border-solid border-[#D0D0A7] rounded-full p-2 bg-white"/>
+                <h5 class="lg:text-lg md:text-base text-sm lg:leading-10 md:leading-8 leading-5">CLIENT NAME HERE</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-8 lg:py-16 bg-lightGreen">
+        <div class="container mx-auto px-4">
+          <h3 class="lg:text-center lg:mb-16 mb-7 text-8xl font-normal">Let's Collabrate Together</h3>
+          <div class="columns-1 sm:columns-2 lg:columns-4 gap-[30px] text-base text-gray leading-10">
+            <p>What is Lorem Ipsum?</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+              galley of type and scrambled it to make a type specimen book.</p>
+            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+              unchanged.</p>
+            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+              recently with desktop publishing
+              software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Why do we use it?</p>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+              at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+              letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+              search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-8 lg:py-16 bg-lightGreen">
+        <div class="container mx-auto px-4">
+          <h3 class="text-center mb-7 text-8xl">Contact Us</h3>
+          <form>
+            <div class="flex flex-wrap -mx-4">
+              <div class="md:w-1/2 w-full px-4">
+                <input
+                  class="border border-[#04282D4D] border-solid p-4 text-xl text-[#04282D] block w-full mb-5 bg-transparent"
+                  placeholder="First Name" type="text" />
+                <input
+                  class="border border-[#04282D4D] border-solid p-4 text-xl text-[#04282D] block w-full mb-5 bg-transparent"
+                  placeholder="Last Name" type="text" />
+    
+                <input
+                  class="border border-[#04282D4D] border-solid p-4 text-xl text-[#04282D] block w-full mb-5 bg-transparent"
+                  placeholder="Email" type="email" />
+                <label class="text-xl text-[#04282D] block mb-5">Comments</label>
+                <textarea rows="4" cols="50"
+                  class="border border-[#04282D4D] border-solid p-4 text-xl text-[#04282D] block w-full bg-transparent">
+    
+            </textarea>
+              </div>
+              <div class="md:w-1/2 w-full px-4 md:mt-0 mt-4">
+                <label class="text-xl text-[#04282D] block mb-5">Upload File</label>
+                <div
+                  class="border-[0.1875rem] border-[#04282D4D] border-dashed h-full relative flex items-center justify-center cursor-pointer">
+                  <div class="text-center">
+                    <img src="assests/images/file-upload.png" class="mx-auto" width="30" height="26" />
+                    <p class="leading-6 my-2 md:text-lg text-sm">Drop Your Files Here</p>
+                    <span class="block text-sm">or</span>
+                    <div
+                      class="md:text-sm text-xs px-5 py-2 border border-[#D0D0A7] border-solid inline-block hover:bg-[#D0D0A7] hover:text-white tracking-widest mt-2">
+                      Browse File</div>
+                  </div>
+                  <input type="file" required class="absolute top-0 left-0 w-full h-full opacity-0 -z-1 cursor-pointer" />
+                </div>
+              </div>
+    
+            </div>
+            <div
+              class="px-5 py-2 border border-[#04282D4D] border-solid inline-block hover:bg-[#04282D4D] hover:text-white mt-5 uppercase tracking-wider cursor-pointer">
+              <span>Submit</span>
+            </div>
+          </form>
+        </div>
+      </section>
+    
+
+
 </body>
+
 </html>
