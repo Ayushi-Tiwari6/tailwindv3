@@ -1,4 +1,4 @@
-const plugin = require('tailwindcss/plugin')
+// const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   darkMode: "class",
@@ -45,14 +45,14 @@ module.exports = {
       '10xl': '70px',
     }
   },
-  plugins: [
-    plugin(({ addVariant, theme }) => {
-      const groups = theme('groups') || []
-      groups.forEach((group) => {
-        addVariant(`group-${group}-hover`, () => {
-          return `:merge(.group-${group}):hover &`
-        })
-      })
-    })
-  ],
+  // plugins: [
+  //   plugin(({ addVariant, theme }) => {
+  //     const groups = theme('groups') || []
+  //     groups.forEach((group) => {
+  //       addVariant(`group-${group}-hover`, () => {
+  //         return `:merge(.group-${group}):hover &`
+  //       })
+  //     })
+  //   })
+  // ],
 }
